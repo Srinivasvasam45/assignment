@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: #F6F6F2;
+  background-image: radial-gradient(circle, #DBDCD3 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: #171B21;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: #2B4C7E;
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #2B4C7E;
+  outline-offset: 2px;
+}
+
+textarea, input, select, button {
+  font-family: inherit;
+}
+
+/* Custom scrollbar for code/text areas, kept subtle */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #DEDFD8;
+  border-radius: 8px;
+}
